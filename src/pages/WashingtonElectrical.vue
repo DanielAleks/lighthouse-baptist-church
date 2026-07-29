@@ -36,6 +36,7 @@
   <div
     class="layout-btn-container fixed top-0 q-pt-sm q-pb-sm"
     style="
+      display: none;
       z-index: 10;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
       width: 100%;
@@ -54,7 +55,7 @@
       class="q-mx-md q-px-md"
     />
     <q-btn
-      label="Neighborhood Trust"
+      label="Trust"
       color="grey-5"
       :flat="layoutType === 'NeighborhoodTrust' ? false : true"
       @click="changeLayout('NeighborhoodTrust')"
@@ -74,7 +75,7 @@
       class="q-mx-md q-px-md"
     />
     <q-btn
-      label="Pacific NW"
+      label="NW"
       color="grey-5"
       :flat="layoutType === 'PacificNW' ? false : true"
       @click="changeLayout('PacificNW')"
@@ -84,7 +85,7 @@
       class="q-mx-md q-px-md"
     />
     <q-btn
-      label="Neon Night"
+      label="Neon"
       color="grey-5"
       :flat="layoutType === 'NeonNight' ? false : true"
       @click="changeLayout('NeonNight')"
@@ -94,7 +95,7 @@
       class="q-mx-md q-px-md"
     />
     <q-btn
-      label="Stark Contrast"
+      label="Contrast"
       color="grey-5"
       :flat="layoutType === 'StarkContrast' ? false : true"
       @click="changeLayout('StarkContrast')"
@@ -105,11 +106,13 @@
     />
   </div>
 
-  <img :src="TopBannerImg" class="top-banner" />
+  <!-- <img :src="TopBannerImg" class="top-banner" /> -->
+
+  <KnobAndTubeRewiring/>
 
   <div class="layout-container">
     <!-- displays which layout is being used -->
-    <CleanPro v-if="layoutType === 'CleanPro'" />
+    <CleanPro v-if="layoutType === 'CleanProHIDE'" />
     <NeonNight v-else-if="layoutType === 'NeonNight'" />
     <ModernMinimal v-else-if="layoutType === 'ModernMinimal'" />
     <PacificNW v-else-if="layoutType === 'PacificNW'" />
@@ -127,6 +130,7 @@ import PacificNW from "src/layouts/PacificNW.vue";
 import StarkContrast from "src/layouts/StarkContrast.vue";
 import NeighborhoodTrust from "src/layouts/NeighborhoodTrust.vue";
 import TopBannerImg from "src/assets/images/washington-electrical/we-top-banner-with-nav.png";
+import KnobAndTubeRewiring from "src/layouts/WE-components/KnobAndTubeRewiring.vue";
 
 export default {
   name: "WashingtonElectrical",
@@ -137,6 +141,7 @@ export default {
     PacificNW,
     StarkContrast,
     NeighborhoodTrust,
+    KnobAndTubeRewiring
   },
   setup() {
     onMounted(() => {

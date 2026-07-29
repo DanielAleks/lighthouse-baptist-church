@@ -551,6 +551,14 @@ footer {
 <template>
 
   <div class="hero">
+    
+    <div>
+      <!-- <WEHeader/> -->
+      <FreeQuoteForm/>
+      <!-- <WhyChooseUs/> -->
+      <!-- <SatisfactionGuaranteed/> -->
+    </div>
+
     <div>
       <div class="badge">✓ Licensed · Bonded · Insured · WASHIEL776C3</div>
       <h1>Trusted <em>electricians</em><br />in Fife, WA</h1>
@@ -845,3 +853,13 @@ footer {
     </div>
   </footer>
 </template>
+
+<script>
+import FreeQuoteForm from "../layouts/WE-components/FreeQuoteForm.vue";
+export default {
+  name: "CleanPro",
+  components: {
+    FreeQuoteForm,
+  },
+};
+</script>
