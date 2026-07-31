@@ -58,7 +58,7 @@
 </template>
 
 <script>
-import heroImage from 'src/assets/images/washington-electrical/we-top-banner.png'
+import heroImage from 'src/assets/images/washington-electrical/russ-top-banner.png'
 
 export default {
 	name: 'WeTopBanner',
@@ -73,7 +73,6 @@ export default {
 <style scoped>
 .we-top-banner {
 	background: #133d5a;
-	padding: 1.2rem 0.75rem 1.1rem;
 }
 
 .we-top-banner__inner {
@@ -84,6 +83,7 @@ export default {
 .we-top-banner__rating-pill {
 	display: inline-flex;
 	align-items: center;
+	margin-top: 2.5rem;
 	gap: 0.45rem;
 	padding: 0.42rem 0.75rem;
 	border-radius: 999px;
@@ -108,7 +108,7 @@ export default {
 	margin: 1.2rem 0 0;
 	color: #ffffff;
 	font-family: "Archivo Black", "Arial Black", sans-serif;
-	font-size: clamp(2.4rem, 6.4vw, 4.35rem);
+	font-size: 1.75rem;
 	line-height: 1.02;
 	letter-spacing: 0.005em;
 }
@@ -131,7 +131,7 @@ export default {
 
 .we-top-banner__btn {
 	border-radius: 999px;
-	height: 3.1rem;
+	height: 5rem;
 	padding: 0 1.5rem;
 	font-family: "Nunito Sans", "Segoe UI", sans-serif;
 	font-size: 1.8rem;
@@ -147,8 +147,9 @@ export default {
 
 .we-top-banner__btn--primary {
 	color: #ffffff;
-	background: linear-gradient(90deg, #f01b05 0%, #e90f00 100%);
-	box-shadow: 0 10px 24px rgba(233, 15, 0, 0.35);
+	background: linear-gradient(90deg, #E01A00 0%, #E01A00 100%);
+	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+	height: 5rem;
 }
 
 .we-top-banner__btn--ghost {

@@ -110,7 +110,7 @@
 
   <KnobAndTubeRewiring/>
 
-  <div class="layout-container">
+  <div >
     <!-- displays which layout is being used -->
     <CleanPro v-if="layoutType === 'CleanProHIDE'" />
     <NeonNight v-else-if="layoutType === 'NeonNight'" />

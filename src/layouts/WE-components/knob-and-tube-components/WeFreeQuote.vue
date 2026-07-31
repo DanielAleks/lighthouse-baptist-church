@@ -71,9 +71,10 @@ export default {
     text-align: center;
     color: #0e395c;
     font-family: "Archivo Black", "Arial Black", sans-serif;
-    font-size: clamp(2rem, 3.4vw, 3.15rem);
+    font-size: clamp(1rem, 1.5rem, 2.15rem);
     letter-spacing: 0.01em;
     line-height: 1.05;
+    font-weight: 700;
 }
 
 .quote-subtitle {
